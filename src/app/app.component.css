@@ -114,6 +114,7 @@
 .image img {
     width: 70%;
     height: 100%;
+    margin-left: 58px;
 }
 .cart-line {
     height: 2px;
@@ -156,14 +157,17 @@
 .cart-item ul li a:hover {
     color: #fa0;
 }
-
+.card:hover .cart-item {
+    opacity: 1;
+    top: 0;
+}
 .product-container {
     position: absolute;
     right: -40px;
     top: 10px;
     z-index: 4;
     transition: 0.6s;
-
+    opacity: 0;
 }
 .p {
     border: 1px solid rgb(233, 233, 233);
@@ -176,4 +180,51 @@
     width: 100%;
     height: 100%;
     opacity: 0.8;
+}
+.p img:hover {
+    opacity: 1;
+}
+.card:hover .product-container {
+    opacity: 1;
+    right: 10px;
+}
+
+.content {
+    padding: 16px 0;
+    text-align: center;
+}
+.content a  {
+    font-size: 16px;
+    color: #555;
+    font-weight: 700;
+    text-transform: capitalize;
+    transition: all .3s;
+}
+.content a:hover{
+    color: #fa0;
+    text-decoration: none;
+}
+.rating i {
+    color: #fa0;
+    line-height: 22px;
+    margin: 0 2px;
+    font-size: 12px;
+}
+
+.content p {
+    margin-bottom: 0;
+}
+.content .money {
+    font-size: 20px;
+    color: #fa0;
+    font-weight: 700;
+    font-style: italic;
+    margin-right: 6px;
+}
+.content .old-price {
+    line-height: 18px;
+    text-decoration: line-through;
+    color: #888;
+    font-style: italic;
+    font-weight: 400;
 }
