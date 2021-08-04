@@ -241,7 +241,74 @@
 
 <section class="policy-product">
   <div class="containers">
-    <div class="row">
+    <div class="bg-position">
+      
+      <owl-carousel-o [options]="customPolicy">
+        <ng-template carouselSlide>
+          <div class="policy-p-card">
+            <div class="date">
+              <h3>25</h3>
+              <h4>Jun</h4>
+            </div>
+            <div class="policy-img">
+              <img src="../assets/policy/p1.jpg" alt="">
+            </div>
+            <h2>Lorem ipsum dolor </h2>
+            <p>Sit amet consectetur adipisicing elit. Tempore, in odio. Dicta maxime eveniet laborum enim quasi placeat modi inventore alias error consequatur quisquam minima sed, ullam, provident vero at!</p>
+            <a href="" class="read-more">Read More <i class="fas fa-caret-right"></i></a>
+        </div>
+       </ng-template>
+
+        <ng-template carouselSlide>
+          <div class="policy-p-card">
+            <div class="date">
+              <h3>25</h3>
+              <h4>Jun</h4>
+            </div>
+            <div class="policy-img">
+              <img src="../assets/policy/p2.jpg" alt="">
+            </div>
+            <h2>Lorem ipsum dolor </h2>
+            <p>Sit amet consectetur adipisicing elit. Tempore, in odio. Dicta maxime eveniet laborum enim quasi placeat modi inventore alias error consequatur quisquam minima sed, ullam, provident vero at!</p>
+            <a href="" class="read-more">Read More <i class="fas fa-caret-right"></i></a>
+        </div>
+        </ng-template>
+
+        <ng-template carouselSlide>
+          <div class="policy-p-card">
+            <div class="date">
+              <h3>25</h3>
+              <h4>Jun</h4>
+            </div>
+            <div class="policy-img">
+              <img src="../assets/policy/p3.jpg" alt="">
+            </div>
+            <h2>Lorem ipsum dolor </h2>
+            <p>Sit amet consectetur adipisicing elit. Tempore, in odio. Dicta maxime eveniet laborum enim quasi placeat modi inventore alias error consequatur quisquam minima sed, ullam, provident vero at!</p>
+            <a href="" class="read-more">Read More <i class="fas fa-caret-right"></i></a>
+          </div>
+        </ng-template>
+
+        <ng-template carouselSlide>
+          <div class="policy-p-card">
+            <div class="date">
+              <h3>25</h3>
+              <h4>Jun</h4>
+            </div>
+            <div class="policy-img">
+              <img src="../assets/policy/p4.jpg" alt="">
+            </div>
+            <h2>Lorem ipsum dolor </h2>
+            <p>Sit amet consectetur adipisicing elit. Tempore, in odio. Dicta maxime eveniet laborum enim quasi placeat modi inventore alias error consequatur quisquam minima sed, ullam, provident vero at!</p>
+            <a href="" class="read-more">Read More <i class="fas fa-caret-right"></i></a>
+        </div>
+        </ng-template>
+
+       
+      </owl-carousel-o>
+      
+    </div>
+    <!-- <div class="row">
       <div class="col-md-4">
         <div class="policy-p-card">
 
@@ -260,6 +327,7 @@
 
         </div>
       </div>
+
       <div class="col-md-4">
         <div class="policy-p-card">
 
@@ -278,6 +346,7 @@
 
         </div>
       </div>
+
       <div class="col-md-4">
         <div class="policy-p-card">
 
@@ -296,6 +365,17 @@
 
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </section>
+
+<section class="partners">
+  <div class="containers">
+    <owl-carousel-o [options]="customOptions">
+      <ng-template carouselSlide *ngFor="let partnersArrays of partnersArray"> 
+        <img class="img_partner" src="{{partnersArrays.imgName}}" alt="Parterner">
+      </ng-template>  
+    </owl-carousel-o>
+  </div>
+</section>
+

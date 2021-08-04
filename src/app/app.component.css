@@ -235,7 +235,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 380px;
+    height: 235px;
     padding: 60px 0;
 
 }
@@ -286,7 +286,7 @@
     border-radius: 5px;
     border-bottom: 1px solid #a8a8a8;
     position: relative;
-    top: -170px;
+    margin-left: 50px;
 }
 .date {
     position: absolute;
@@ -334,6 +334,7 @@
     margin: 18px 0 10px;
     cursor: pointer;
     transition: all 0.3s ease;
+    
 }
 .policy-p-card h2:hover {
     color: #ff4000;
@@ -366,4 +367,24 @@
 }
 .read-more:hover i {
     margin-left: 6px;
+}
+.bg-position {
+   
+}
+
+.partners img {
+    transition: all .3s ease;
+}
+.partners img:hover{
+    box-shadow: 0 0 24px -1px #dbdbdb;
+}
+.img_partner {
+    margin-top: 12px;
+    padding: 44px;
+}
+.col-md-2 {
+    margin-top: 32px;
+}
+.partners {
+    height: 112px;
 }

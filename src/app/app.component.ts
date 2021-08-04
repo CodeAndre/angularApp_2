@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
   selector: 'app-root',
@@ -32,4 +33,76 @@ export class AppComponent implements OnInit{
   changeImg(event: any){
     this.url_3 = event.target.src;
   }
+
+  partnersArray: any = [
+    {
+      imgName: "../assets/parterns/p1.png"
+    },
+    {
+      imgName: "../assets/parterns/p2.png"
+    },
+    {
+      imgName: "../assets/parterns/p3.png"
+    },
+    {
+      imgName: "../assets/parterns/p4.png"
+    },
+    {
+      imgName: "../assets/parterns/p7.png"
+    },
+    {
+      imgName: "../assets/parterns/p6.png"
+    },
+  ]
+
+  customOptions: OwlOptions = {
+    loop: true,
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: true,
+    dots: false,
+    navSpeed: 700,
+    navText: ['', ''],
+    responsive: {
+      0: {
+        items: 1
+      },
+      400: {
+        items: 2
+      },
+      740: {
+        items: 3
+      },
+      940: {
+        items: 6
+      }
+    },
+    nav: false
+  }
+
+  customPolicy: OwlOptions = {
+    loop: true,
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: true,
+    dots: false,
+    navSpeed: 700,
+    navText: ['<i class="fas fa-caret-left"></i>', '<i class="fas fa-caret-right"></i>'],
+    responsive: {
+      0: {
+        items: 1
+      },
+      400: {
+        items: 2
+      },
+      740: {
+        items: 3
+      },
+      940: {
+        items: 3
+      }
+    },
+    nav: true
+  }
+
 }
